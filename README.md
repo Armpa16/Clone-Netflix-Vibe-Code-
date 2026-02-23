@@ -1,16 +1,161 @@
-# React + Vite
+# Netflix Clone Vibe Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎬 **Netflix Clone สุดยอดด้วย React + Vite**
 
-Currently, two official plugins are available:
+โปรเจคนี้พัฒนาซ้อง Netflix ด้วย UI ที่สวยงามและทันสมัย พร้อมฟีเจอร์ที่ครบครบน
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ **ฟีเจอร์หลัก**
 
-## React Compiler
+### 🎨 **UI/UX ที่ปรับปรุง**
+- **Hover Effects**: การ์ดหนังมี hover effect ที่สวยงาม
+  - รูปภาพเบลอค่อยๆ (blur + brightness)
+  - การ์ดขยายและแสดงข้อมูลภาพยนอน
+  - ปุ่ม Play และ Add to List พร้อม animation
+  - Transition ที่ลื่นไหลและนุ่มนวล
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎮 **การเลื่อน**
+- **ปุ่มนำทาง**: ปุ่มซ้าย-ขวา สำหรับเลื่อนดูหนังในแต่ละหมวด
+- **Smooth Scrolling**: เลื่อนแบบนุ่มนวล (smooth behavior)
+- **Auto-boundary**: ไม่เลื่อนเกินขอบข้อมูล
+- **Responsive**: ทำงานได้ดีในทุกขนาด
 
-## Expanding the ESLint configuration
+### 🎭 **Visual Effects**
+- **Glassmorphism**: ปุ่มและ overlay มี effect กระจก
+- **Shadow Effects**: การ์ดและปุ่มมีเงาที่สวยงาม
+- **Gradient Overlays**: การเปลี่ยนสีแบบ gradient บนรูปภาพ
+- **Transform Animations**: การขยายและเคลื่อนแบบ 3D
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ **เทคโนโลยีที่ใช้**
+
+### **Frontend**
+- **React 18** - UI Library สำหรับการสร้าง Component
+- **Vite** - Build Tool ที่เร็วและ Modern
+- **Tailwind CSS** - CSS Framework สำหรับการออกแบบ Responsive
+- **JavaScript ES6+** - Modern JavaScript Features
+
+### **Features**
+- **Component-based Architecture** - แยกส่วน Component ต่างๆ
+- **Custom Hooks** - ใช้ useState, useRef สำหรับ State Management
+- **Responsive Design** - รองรับทุกขนาดจอภาพ
+- **Smooth Animations** - CSS Transitions และ Transforms
+- **Modern CSS** - Backdrop filters, gradients, shadows
+
+## 📁 **โครงสร้าง**
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx      # แถบนำทางพร้อม search และ user menu
+│   ├── Hero.jsx        # หน้าแรกสุดด้วย backdrop และ CTA buttons
+│   ├── Row.jsx          # แถวแสดงหนังแนวนอน
+│   └── Footer.jsx       # ส่วนท้ายพร้อม links และ social media
+├── data/
+│   └── mockData.js    # ข้อมูลตัวอย่างหนังและ categories
+├── index.css           # Custom CSS สำหรับ animations และ effects
+├── App.jsx             # Main Application Component
+└── main.jsx            # Entry Point
+```
+
+## 🚀 **การติดตั้งและรัน**
+
+```bash
+# Clone repository
+git clone https://github.com/Armpa16/Clone-Netflix-Vibe-Code-.git
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 🎯 **ฟีเจอร์พิเศษ**
+
+### **Movie Cards**
+- Hover แล้วแสดง overlay ข้อมูล
+- ปุ่ม Play และ Add พร้อม icon
+- Rating match percentage แบบ dynamic
+- ปรับเปลี่ยนขนาดของรูปภาพ
+
+### **Navigation**
+- ปุ่มซ้าย-ขวา สำหรับแต่ละหมวด
+- Smooth scrolling ด้วย JavaScript API
+- Auto-hide ปุ่มเมื่อไม่ hover
+- Glassmorphism effect บนปุ่ม
+
+### **Responsive**
+- Mobile: 160px width
+- Tablet: 200px width  
+- Desktop: 240px width
+- Large: 280px width
+
+## 🎨 **Custom CSS Classes**
+
+### **Movie Card Hover**
+```css
+.movie-card:hover {
+  transform: scale(1.05);
+  z-index: 20;
+  filter: brightness(1.1);
+}
+
+.movie-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.5) blur(4px);
+}
+```
+
+### **Navigation Buttons**
+```css
+.nav-button {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+```
+
+## 📱 **Responsive Breakpoints**
+
+- **Mobile**: < 640px
+- **Tablet**: 640px - 1024px  
+- **Desktop**: 1024px - 1536px
+- **Large**: > 1536px
+
+## 🌟 **Highlight Features**
+
+- ✅ **Real Movie Data** - ใช้ข้อมูลหนังจริงจาก TMDB
+- ✅ **Smooth Animations** - Transition ที่ลื่นไหลทั้งหมด
+- ✅ **Modern UI** - Glassmorphism, gradients, shadows
+- ✅ **Full Responsive** - ทำงานได้ดีในทุกอุปกรณ์
+- ✅ **Interactive Elements** - Hover states, click handlers
+- ✅ **Performance Optimized** - Lazy loading และ efficient rendering
+
+## 🎬 **Demo**
+
+[![Netflix Clone Demo](https://github.com/Armpa16/Clone-Netflix-Vibe-Code-.raw/main/demo.gif)]
+
+## 🤝 **Contributing**
+
+ยินดีต้อนการร่วมสร้างโปรเจคนี้! สามารถ:
+
+1. Fork repository
+2. สร้าง feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
+
+## 📄 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 **Developer**
+
+Created with ❤️ by [Armpa16](https://github.com/Armpa16)
+
+---
+
+**Netflix Clone Vibe Code** - ทำให้คุณสัมผั้ง Netflix ที่บ้าน! 🍿✨
