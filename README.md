@@ -136,26 +136,5 @@ npm run build
 
 ## 🎬 **Demo**
 
-[![Netflix Clone Demo](https://github.com/Armpa16/Clone-Netflix-Vibe-Code-.raw/main/demo.gif)]
+[![Netflix Clone Demo](https://clonevibecode.netlify.app/)]
 
-## 🤝 **Contributing**
-
-ยินดีต้อนการร่วมสร้างโปรเจคนี้! สามารถ:
-
-1. Fork repository
-2. สร้าง feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 **Developer**
-
-Created with ❤️ by [Armpa16](https://github.com/Armpa16)
-
----
-
-**Netflix Clone Vibe Code** - ทำให้คุณสัมผั้ง Netflix ที่บ้าน! 🍿✨
