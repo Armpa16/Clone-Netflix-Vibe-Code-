@@ -135,6 +135,5 @@ npm run build
 - ✅ **Performance Optimized** - Lazy loading และ efficient rendering
 
 ## 🎬 **Demo**
-
-[![Netflix Clone Demo](https://clonevibecode.netlify.app/)]
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8f26066b-4ac7-488a-a806-215004d64290" />
 
